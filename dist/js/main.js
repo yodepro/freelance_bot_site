@@ -107,14 +107,42 @@
 var burgerBtn = document.querySelector(".header__burger-btn");
 var burgerOverflow = document.querySelector(".burger-overflow");
 var burgerMenu = document.querySelector(".header__burger-menu");
+var headerMenuItem = document.querySelector(".header__nav-item");
 
 var openBurgerMenu = function openBurgerMenu() {
-  burgerBtn.classList.toggle('header__burger-btn--open');
-  burgerOverflow.classList.toggle('burger-overflow--open');
-  burgerMenu.classList.toggle('header__burger-menu--open');
+  burgerBtn.classList.toggle("header__burger-btn--open");
+  burgerOverflow.classList.toggle("burger-overflow--open");
+  burgerMenu.classList.toggle("header__burger-menu--open");
 };
 
-burgerBtn.addEventListener('click', openBurgerMenu);
+burgerBtn.addEventListener("click", openBurgerMenu);
+burgerOverflow.addEventListener("click", openBurgerMenu);
+document.querySelector('.header__nav').addEventListener('click', function (e) {
+  if (e.target.classList.contains('header__nav-item')) {
+    openBurgerMenu();
+  }
+}); //Скролл до секций
+
+var sectionScroll = function sectionScroll(from) {
+  var fromLink = document.querySelector(from);
+  var href = fromLink.getAttribute('href');
+  fromLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    var elementPosition = document.querySelector(href).getBoundingClientRect().top;
+    window.scrollBy({
+      top: elementPosition,
+      behavior: "smooth"
+    });
+  });
+};
+
+sectionScroll(".scrollFrom-useful");
+sectionScroll(".scrollFrom-suitable");
+sectionScroll(".scrollFrom-tarif");
+sectionScroll(".scrollFrom-useful--footer"); //--footer нужен, т.к addEventListener не может работать с массивом элементов
+
+sectionScroll(".scrollFrom-suitable--footer");
+sectionScroll(".scrollFrom-tarif--footer");
 
 /***/ }),
 

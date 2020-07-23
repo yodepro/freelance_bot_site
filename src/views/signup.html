@@ -90,20 +90,13 @@
       sizes="1024x1024"
       href="img/favicons/apple-touch-icon-1024x1024.png"
     />
-    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <div class="body-container">
-      @@include("../../blocks/modules/header/header.html")
-      <main class="body-container__main">
-        @@include("../../blocks/modules/intro/intro.html")
-        @@include("../../blocks/modules/useful-suitable/useful-suitable.html")
-        @@include("../../blocks/modules/how/how.html")
-        @@include("../../blocks/modules/tarif/tarif.html")
-      </main>
-      @@include("../../blocks/modules/footer/footer.html")
+    <div class="body-container body-container--center">
+      @@include("../blocks/modules/signup/signup.html")
     </div>
-    <script src="../js/main.js"></script>
-    <script src="../js/vendor.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>

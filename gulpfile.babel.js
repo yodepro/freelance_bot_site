@@ -5,7 +5,7 @@ import gulp from "gulp";
 const requireDir = require("require-dir"),
   paths = {
     views: {
-      src: ["./src/views/**/*.html", "./src/views/pages/*.html"],
+      src: ["./src/views/**/*.html"],
       dist: "./dist/",
       watch: ["./src/blocks/**/*.html", "./src/views/**/*.html"],
     },

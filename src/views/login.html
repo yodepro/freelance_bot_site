@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>New Page</title>
+    <title>Шаблон</title>
     <meta name="theme-color" content="#c9e0e04d" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -93,10 +93,10 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    @@include("../../blocks/modules/header/header.html")
-    <h1>New Page1111</h1>
-    @@include("../../blocks/modules/footer/footer.html")
-    <script src="../js/main.js"></script>
-    <script src="../js/vendor.js"></script>
+    <div class="body-container body-container--center">
+      @@include("../blocks/modules/login/login.html")
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
   </body>
 </html>
