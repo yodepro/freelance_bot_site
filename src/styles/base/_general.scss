@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #222126;
+  background-color: #f2f4f7;
 }
 
 * {
@@ -24,16 +25,23 @@ p {
 }
 
 .section-title {
-  font-weight: 600;
+  font-family: "Bebas Neue";
+  font-weight: 700;
   font-size: 64px;
   line-height: 70px;
   text-transform: uppercase;
+  &--white {
+    color: #fff;
+  }
 }
 .section-desc {
   font-weight: 400;
   font-size: 20px;
   line-height: 37px;
   margin-top: 32px;
+  &--white {
+    color: #fff;
+  }
 }
 
 .container {
@@ -99,15 +107,23 @@ a {
   padding: 15px 24px;
   color: #ffffff;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition-property: background, box-shadow;
+  transition: 0.3s ease;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 100px;
   box-shadow: 0px 0px 40px rgba(0, 55, 159, 0.4);
   &:hover {
     background: $primary-light-color;
+    box-shadow: 0px 0px 40px rgba(0, 55, 159, 0.6);
   }
-  &--uppercase {
-    text-transform: uppercase;
+  &--yellow {
+    background: #fff753;
+    box-shadow: 0px 0px 40px rgba(255, 247, 83, 0.4);
+    color: #222126;
+    &:hover {
+      background: #fff985;
+      box-shadow: 0px 0px 40px rgba(255, 247, 83, 0.6);
+    }
   }
 }
