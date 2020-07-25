@@ -1,6 +1,6 @@
 .intro {
   padding: 210px 0px 279px 0px;
-  background: url(../img/static/header-bg.svg) no-repeat center right 60px,
+  background: url(./../img/static/header-bg.svg) no-repeat center right 60px,
     linear-gradient(90deg, #080923 0%, #010a5f 100%);
   &__title {
     color: #fff;
@@ -48,7 +48,7 @@
     }
   }
   @media (max-width: 1140px) {
-    background: url(../img/static/header-bg.svg) no-repeat center right 60px /
+    background: url(./../img/static/header-bg.svg) no-repeat center right 60px /
         400px,
       linear-gradient(90deg, #080923 0%, #010a5f 100%);
   }
