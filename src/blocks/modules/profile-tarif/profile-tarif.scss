@@ -1,0 +1,42 @@
+.profile-tarif {
+  margin-right: 20px;
+  flex: none;
+  @media (max-width: 1312px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1140px) {
+    width: 313 + 40px;
+  }
+  @media (max-width: 960px) {
+    width: 100%;
+  }
+  &__card-list {
+    margin-top: 17px;
+    .tarif-card-list {
+      @media (max-width: 1312px) {
+        width: 100%;
+        justify-content: space-between;
+      }
+      @media (max-width: 1140px) {
+        width: 100%;
+        display: block;
+      }
+      @media (max-width: 960px) {
+        display: flex;
+      }
+      &__item {
+        @media (max-width: 1140px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 960px) {
+         width: 100%;
+         margin-right: 0px;
+         &:last-child {
+           margin-bottom: 0px;
+         }
+        }
+      }
+    }
+  }
+}
