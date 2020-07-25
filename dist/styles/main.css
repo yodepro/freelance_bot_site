@@ -776,7 +776,7 @@ a {
 
 .intro {
   padding: 210px 0px 279px 0px;
-  background: url(../../img/static/header-bg.svg) no-repeat center right 60px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
+  background: url(../img/static/header-bg.svg) no-repeat center right 60px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
 }
 
 .intro__title {
@@ -1540,7 +1540,7 @@ a {
   }
 
   .intro {
-    background: url(../../img/static/header-bg.svg) no-repeat center right 60px/400px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
+    background: url(../img/static/header-bg.svg) no-repeat center right 60px/400px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
   }
 
   .useful__image {
