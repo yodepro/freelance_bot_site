@@ -4,6 +4,9 @@
   @media (max-width: 960px) {
     width: 100%;
   }
+  &__avatar {
+    border-radius: 50%;
+  }
   &__padding {
     padding: 0px 16px;
   }
@@ -30,6 +33,9 @@
       align-items: center;
       justify-content: center;
       margin-right: 12px;
+      &--error {
+        background: #FF5353;
+      }
     }
     &-title {
       color: #222126;

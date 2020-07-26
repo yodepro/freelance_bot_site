@@ -152,7 +152,7 @@
             Личный кабинет
           </h1>
         </section>
-        <section class="container profile-page profile-page--tarif">
+        <section class="container profile-page profile-page--bot">
           <div class="profile-page__sidebar">
             <div class="profile-sidebar profile-card">
   <div class="profile-sidebar__padding">
@@ -220,122 +220,72 @@
           <div class="profile-page__main">
             <div class="profile-card profile-row-title">
   <h2 class="profile-title">
-    Добро пожаловать в список тарифов Freelance Bot'a
+    Добро пожаловать в ваш личный кабинет!
   </h2>
   <p class="profile-desc">
-    Здесь вы можете приобрести подписку и посмотреть историю покупок
+    Здесь вы можете подключить бота и настроить фильтры
   </p>
 </div>
             <div class="profile-page__content">
-              <div class="profile-card profile-tarif">
+              <div class="profile-card profile-plug-bot">
   <h2 class="profile-title">
-    Тарифы
+    Подключите бота
   </h2>
   <p class="profile-desc">
-    Выберите тариф, соответствующий вашим потребностям
+    И получайте уведомления о новых заказах с фриланс-бирж в свой аккаунт
+    мессенджеров и соцсетей
   </p>
-  <div class="profile-tarif__card-list">
-    <ul class="tarif-card-list">
-  <li class="tarif-card-list__item">
-    <h3 class="tarif-card-list__title">
-      Start
-      <div class="tarif-card-list__circle"></div>
-    </h3>
-    <div class="tarif-card-list__content">
-      <div class="tarif-card-list__price-box">
-        <p class="tarif-card-list__price-discount">
-          599 ₽
+  <ul class="profile-plug-bot__list">
+    <li class="profile-plug-bot__item">
+      <div class="profile-plug-bot__icon">
+        <img src="img/static/telegram-icon.svg" alt="tg">
+      </div>
+      <div class="profile-plug-bot__content">
+        <p class="profile-plug-bot__item-title">
+          Telegram
         </p>
-        <p class="tarif-card-list__price">
-          290 ₽
+        <a href="#" class="link-hover link-hover--blue profile-plug-bot__item-desc">
+          Подключить
+        </a>
+      </div>
+    </li>
+    <li class="profile-plug-bot__item">
+      <div class="profile-plug-bot__icon profile-plug-bot__icon--vk">
+        <img src="img/static/vk-icon.svg" alt="vk">
+      </div>
+      <div class="profile-plug-bot__content">
+        <p class="profile-plug-bot__item-title">
+          ВК
+        </p>
+        <p class="profile-plug-bot__item-desc profile-plug-bot__item-desc--dev">
+          В разработке
         </p>
       </div>
-      <ul class="tarif-card-list__benefits-list">
-        <li class="tarif-card-list__benefits">
-          Лента проектов
-        </li>
-        <li class="tarif-card-list__benefits">
-          Краткое содержание
-        </li>
-        <li class="tarif-card-list__benefits">
-          Ссылка на источник
-        </li>
-      </ul>
-      <a
-        href="signup.html"
-        class="site-button site-button--yellow tarif-card-list__button"
-      >
-        Выбрать тариф
-      </a>
-    </div>
-  </li>
-  <li class="tarif-card-list__item">
-    <h3 class="tarif-card-list__title">
-      Pro
-      <div class="tarif-card-list__circle"></div>
-    </h3>
-    <div class="tarif-card-list__content">
-      <div class="tarif-card-list__price-box">
-        <p class="tarif-card-list__price">
-          5990 ₽
+    </li>
+    <li class="profile-plug-bot__item">
+      <div class="profile-plug-bot__icon profile-plug-bot__icon--viber">
+        <img src="img/static/viber.svg" alt="tg">
+      </div>
+      <div class="profile-plug-bot__content">
+        <p class="profile-plug-bot__item-title">
+          Viber
+        </p>
+        <p class="profile-plug-bot__item-desc profile-plug-bot__item-desc--dev">
+          В разработке
         </p>
       </div>
-      <ul class="tarif-card-list__benefits-list">
-        <li class="tarif-card-list__benefits">
-          Фильтрация по цене
-        </li>
-        <li class="tarif-card-list__benefits">
-          Настройка тем
-        </li>
-        <li class="tarif-card-list__benefits">
-          Предпросмотр заказа
-        </li>
-      </ul>
-      <a
-        href="signup.html"
-        class="site-button site-button--yellow tarif-card-list__button"
-      >
-        Выбрать тариф
-      </a>
-    </div>
-  </li>
-</ul>
-
-  </div>
-</div>
-              <div class="profile-card profile-history">
-  <h2 class="profile-title">
-    История покупок
-  </h2>
-  <p class="profile-desc">
-    Вся информация о платных подписках
-  </p>
-  <ul class="profile-history__list">
-    <li class="profile-history__item">
-      <p class="profile-history__price">
-        PRO - 5990 ₽
-      </p>
-      <p class="profile-history__date">
-        12.06.2020
-      </p>
-    </li>
-    <li class="profile-history__item">
-      <p class="profile-history__price">
-        PRO - 5990 ₽
-      </p>
-      <p class="profile-history__date">
-        12.06.2020
-      </p>
-    </li>
-    <li class="profile-history__item">
-      <p class="profile-history__price">
-        PRO - 5990 ₽
-      </p>
-      <p class="profile-history__date">
-        12.06.2020
-      </p>
     </li>
   </ul>
+</div>
+
+              <div class="profile-card profile-filter">
+  <h2 class="profile-title">
+    Фильтры
+  </h2>
+  <p class="profile-desc">
+    Доступны на тарифе PRO
+  </p>
+  <img src="img/static/profile-filter.jpg" alt="filter" class="profile-filter__img">
 </div>
 
             </div>

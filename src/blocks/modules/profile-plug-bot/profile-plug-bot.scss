@@ -1,0 +1,61 @@
+.profile-plug-bot {
+  margin-right: 20px;
+  flex: none;
+  width: 313px;
+  @media (max-width: 960px) {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    list-style: none;
+    margin-top: 24px;
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #37AEE2;
+    position: relative;
+    margin-right: 10px;
+    flex: none;
+    img {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: -2px;
+    }
+    &--vk {
+      background: #507298;
+      opacity: .3;
+      img {
+        margin-left: 0px;
+      }
+    }
+    &--viber {
+      background: #8658AB;
+      opacity: .3;
+      img {
+        width: 24px;
+        margin-left: 0px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    &-title {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    &-desc {
+      font-size: 14px;
+      &--dev {
+        color: #84898F;
+      }
+    }
+  }
+}
