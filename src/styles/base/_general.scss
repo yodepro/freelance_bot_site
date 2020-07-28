@@ -35,7 +35,7 @@ p {
   }
   &--profile {
     font-size: 38px;
-    color: #1A1A1A;
+    color: #1a1a1a;
     line-height: 38px;
   }
 }
@@ -188,4 +188,20 @@ a {
   line-height: 22px;
   margin-top: 8px;
   color: #4a4a4a;
+}
+
+.site-form {
+  max-width: 400px; // можно менять, как угодно :)
+  &__field {
+    margin-top: 12px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  &__input {
+    width: 100%;
+  }
+  &__button {
+    margin-top: 24px;
+  }
 }
