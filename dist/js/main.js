@@ -117,22 +117,27 @@ var openBurgerMenu = function openBurgerMenu() {
 
 burgerBtn.addEventListener("click", openBurgerMenu);
 burgerOverflow.addEventListener("click", openBurgerMenu);
-document.querySelector('.header__nav').addEventListener('click', function (e) {
-  if (e.target.classList.contains('header__nav-item')) {
+document.querySelector(".header__nav").addEventListener("click", function (e) {
+  if (e.target.classList.contains("header__nav-item")) {
     openBurgerMenu();
   }
 }); //Скролл до секций
 
 var sectionScroll = function sectionScroll(from) {
   var fromLink = document.querySelector(from);
-  var href = fromLink.getAttribute('href');
+  var href = fromLink.getAttribute("href");
   fromLink.addEventListener("click", function (e) {
     e.preventDefault();
-    var elementPosition = document.querySelector(href).getBoundingClientRect().top;
-    window.scrollBy({
-      top: elementPosition,
-      behavior: "smooth"
-    });
+
+    if (window.location.pathname === "/") {
+      var elementPosition = document.querySelector(href).getBoundingClientRect().top;
+      window.scrollBy({
+        top: elementPosition,
+        behavior: "smooth"
+      });
+    } else {
+      window.location.href = "/".concat(href.split(4));
+    }
   });
 };
 

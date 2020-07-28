@@ -11,29 +11,33 @@ const openBurgerMenu = () => {
 
 burgerBtn.addEventListener("click", openBurgerMenu);
 burgerOverflow.addEventListener("click", openBurgerMenu);
-document.querySelector('.header__nav').addEventListener('click',(e) => {
-  if (e.target.classList.contains('header__nav-item')) {
+document.querySelector(".header__nav").addEventListener("click", (e) => {
+  if (e.target.classList.contains("header__nav-item")) {
     openBurgerMenu();
   }
-})
+});
 
 //Скролл до секций
 const sectionScroll = (from) => {
   let fromLink = document.querySelector(from);
-  let href = fromLink.getAttribute('href')
+  let href = fromLink.getAttribute("href");
   fromLink.addEventListener("click", (e) => {
     e.preventDefault();
-    
-    let elementPosition = document.querySelector(href).getBoundingClientRect().top;
+    if (window.location.pathname === "/") {
+      let elementPosition = document.querySelector(href).getBoundingClientRect()
+        .top;
 
-    window.scrollBy({
-      top: elementPosition,
-      behavior: "smooth",
-    });
+      window.scrollBy({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    } else {
+      window.location.href = `/${href.split(4)}`;
+    }
   });
 };
 
-sectionScroll(".scrollFrom-useful",);
+sectionScroll(".scrollFrom-useful");
 sectionScroll(".scrollFrom-suitable");
 sectionScroll(".scrollFrom-tarif");
 sectionScroll(".scrollFrom-useful--footer"); //--footer нужен, т.к addEventListener не может работать с массивом элементов
