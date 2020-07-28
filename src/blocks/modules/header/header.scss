@@ -35,6 +35,14 @@
     @media (max-width: 720px) {
       display: none;
     }
+    &--mobile {
+      display: none;
+      @media (max-width: 720px) {
+        display: block;
+        margin-left: 0;
+        margin-top: 35px;
+      }
+    }
   }
   &__burger-btn {
     display: none;
