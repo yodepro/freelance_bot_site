@@ -800,7 +800,10 @@ a {
 
 .intro {
   padding: 210px 0px 279px 0px;
-  background: url(../img/static/header-bg.svg) no-repeat center right 60px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
+  background-repeat: no-repeat;
+  background-position: center right 60px, left;
+  background-image: url(../img/static/header-bg@1x.png), linear-gradient(90deg, #080923 0%, #010a5f 100%);
+  background-size: 658px auto, 100%;
 }
 
 .intro__title {
@@ -1681,7 +1684,7 @@ a {
   }
 
   .intro {
-    background: url(../img/static/header-bg.svg) no-repeat center right 60px/400px, linear-gradient(90deg, #080923 0%, #010a5f 100%);
+    background-size: 400px auto, 100%;
   }
 
   .useful__image {
@@ -1724,7 +1727,9 @@ a {
   }
 
   .intro {
-    background: linear-gradient(90deg, #080923 0%, #010a5f 100%);
+    background-image: linear-gradient(90deg, #080923 0%, #010a5f 100%) !important;
+    background-size: cover;
+    background-position: top center;
   }
 
   .useful__image {
@@ -2007,6 +2012,12 @@ a {
 @media (max-width: 360px) {
   .intro__button {
     width: 100%;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url(../img/static/header-bg@2x.png), linear-gradient(90deg, #080923 0%, #010a5f 100%);
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
